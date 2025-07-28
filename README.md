@@ -1,11 +1,11 @@
 <img src="./images/logo.png" align="right" width="20%">
 
-📌 **This paper has been accepted for publication in IEEE Robotics and Automation Letters (RA-L), 2024.**
+📌 **This paper has been accepted for publication in IEEE Robotics and Automation Letters (RA-L), 2025.**
 
 # Accurate Pose Refinement of Detected Vehicles Using LiDAR Point-to-Surfel ICP and Vehicle Shape Priors
 Repository for paper "*Accurate Pose Refinement of Detected Vehicles Using LiDAR Point-to-Surfel ICP and Vehicle Shape Priors*"
 
-This repository provides code of prior model-based detection refinement moudle, dataset and evaluation tool  
+This repository provides code of prior model-based detection refinement moudle, dataset and evaluation tool.
 (Our codes will be provided soon. Stay tuned!)
 
 <div align="center">
@@ -146,5 +146,5 @@ If you find this work useful in your research, please cite:
 
 ## Contact
 If you have any questions, please let me know:
-- Soyeong Kim (`soyeongkim@hanyang.ac.kr`), Jaeyoung Jo (`wodud3743@gmail.com`)
+- Soyeong Kim (`soyeongkim@hanyang.ac.kr`), Jaeyoung Jo (`wodud3743@gmail.com`), Jaehwan Lee
 - AILAB Hanyang University (https://autolab.hanyang.ac.kr/)
