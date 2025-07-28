@@ -1,14 +1,12 @@
 <img src="./images/logo.png" align="right" width="20%">
 
-# CAD_Refinement
-Repository for paper "*Enhanced Pose Detection of Nearby Vehicles Using LiDAR and Prior Shape for Autonomous Driving*"
+📌 **This paper has been accepted for publication in IEEE Robotics and Automation Letters (RA-L), 2024.**
 
-<div align="center">
-<a href="https://youtu.be/HcDK91Y4lso" target="_blank"><img src="images/presentation_cover.png" alt="video" width="60%" /></a>
-</div>
+# Accurate Pose Refinement of Detected Vehicles Using LiDAR Point-to-Surfel ICP and Vehicle Shape Priors
+Repository for paper "*Accurate Pose Refinement of Detected Vehicles Using LiDAR Point-to-Surfel ICP and Vehicle Shape Priors*"
 
 This repository provides code of prior model-based detection refinement moudle, dataset and evaluation tool  
-(The code will be uploaded after the review process!)
+(Our codes will be provided soon. Stay tuned!)
 
 <div align="center">
 <img src="./images/system_architecture.png" width="800">
@@ -24,10 +22,6 @@ This repository provides code of prior model-based detection refinement moudle, 
 <b>Detection improvement (mIoU) results by various voxel size</b>
 </div>
 <br>
-
-
-## Purpose
-Enhancing LiADR-based 3D bounding box detection with prior car shape model 
 
 ## Method
 
@@ -99,7 +93,7 @@ roslaunch cad_registration cad_registration.launch
 
 ## Scenario Bag file
 
-[Google Drive Link](https://drive.google.com/drive/folders/1VgPlIYq697lHDboZdOffiofuVNBP87-y?usp=sharing)
+[Google Drive Link] will be provided soon. Stay tuned!
 1. Stop Scenario
     1. Ego: /Ego_Vehicle/stop_3_ego.bag
     2. Target 1: /Target_Vehicle_1/target_1_3.bag
@@ -122,9 +116,8 @@ roslaunch cad_registration cad_registration.launch
 1. Need GNSS Topic from target vehicle (Existed in bag files)
 * /novatel/oem7/inspvax
 
-2. Ego detection topoic type should be "**autoku_types::DetectsObjects**" (Will be change to a general topic type.)
+2. Ego detection topoic type should be "**autohyu_msgs::DetectsObjects**" (Will be change to a general topic type.)
 * topic_name/ego_detection_topic_name
-
 
 
 ## Run Evaluation Tool
@@ -137,7 +130,21 @@ roslaunch detection_evaluation detection_evaluation.launch
 
 3. Type scene number when "*Enter index of scene to visualize ('q' to quit)*" pop up
 
+## Citation
+
+If you find this work useful in your research, please cite:
+
+```bibtex
+@article{kim2025accurate,
+  title={Accurate Pose Refinement of Detected Vehicles Using LiDAR Point-to-Surfel ICP and Vehicle Shape Priors},
+  author={Kim, Soyeong and Jo, Jaeyoung and Lee, Jaehwan and Jo, Kichun},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
+}
+```
+
 ## Contact
 If you have any questions, please let me know:
-- Jaeyoung Jo (`wodud3743@gmail.com`)
+- Soyeong Kim (`soyeongkim@hanyang.ac.kr`), Jaeyoung Jo (`wodud3743@gmail.com`)
 - AILAB Hanyang University (https://autolab.hanyang.ac.kr/)
