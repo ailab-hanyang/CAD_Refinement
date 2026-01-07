@@ -1,0 +1,29 @@
+<launch>
+    <arg name="rviz_conf" default="$(find cad_registration)/../../rviz.rviz" />
+    <arg name="pcd_path" default="$(find cad_registration)/../../pcd/ioniq5_low_above_outside.pcd" />
+
+    <node pkg="cad_registration" type="cad_registration" name="cad_registration" output="screen">
+        <param name="period_box_point_generator" value="0.1" />
+        
+        <param name="f_voxel_grid_size_ioniq_m_" value="0.05" />
+        <param name="f_voexl_grid_size_cluster_m_" value="0.2" />
+        <param name="f_voxel_grid_size_surfel_sample_m_" value="0.3" />
+        <param name="f_hash_grid_size_m_" value="0.4" />
+
+        <param name="f_min_planarity" value="0.95" />
+        <param name="f_lm_lambda_" value="0.5" />
+        <param name="b_use_gm_kernel_" value="false" />
+        <param name="f_gm_kernel_simga_" value="0.01" />
+        <param name="b_use_hash_search_" value="true" />
+        <param name="b_use_p2p_registration_" value="false" />
+
+        <param name="b_visualize_cad_points_" value="true" />
+        <param name="b_visualize_sample_cad_" value="true" />
+        <param name="b_visualize_surfel_" value="true" />
+
+        <param name="ioniq_pcd_path" value="$(arg pcd_path)" />
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_conf)" />
+
+</launch>
